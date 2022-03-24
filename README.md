@@ -83,7 +83,7 @@ import { Parser, parse, parseStream } from '@ssttevee/xml-parser';
 ### Deno
 
 ```ts
-import { Parser, parse, parseStream } from 'https://raw.githubusercontent.com/ssttevee/xml-parser/master/index.ts';
+import { Parser, parse, parseStream } from 'https://raw.githubusercontent.com/ssttevee/xml-parser/trunk/mod.ts';
 ```
 
 OR

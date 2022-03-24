@@ -4,16 +4,16 @@
     "author": "ssttevee",
     "license": "MIT",
     "type": "module",
-    "main": "index.js",
-    "types": "index.d.ts",
+    "main": "mod.js",
+    "types": "mod.ts",
     "files": [
-        "index.js",
-        "index.js.map",
-        "index.d.ts"
+        "mod.js",
+        "mod.ts"
     ],
     "scripts": {
-        "prepack": "tsc"
-    },  
+        "prepack": "deno bundle mod.ts -- mod.js",
+        "test": "deno test"
+    },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/ssttevee/js-iterator-based-xml-parser"
