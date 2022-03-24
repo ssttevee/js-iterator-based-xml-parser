@@ -13,7 +13,6 @@ export interface ProcessingInstruction {
     text: string;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-namespace
 export namespace Parser {
     export interface TextNode {
         type: 'text';
@@ -59,7 +58,6 @@ export namespace Parser {
         | ProcessingInstructionNode
         | CDataNode;
 
-    // eslint-disable-next-line @typescript-eslint/no-namespace
     export namespace Node {
         export type Type = Node['type'];
 
@@ -101,7 +99,6 @@ enum Tokens {
     RightSquareBracket = 93, // ]
 }
 
-// eslint-disable-next-line @typescript-eslint/no-namespace
 namespace ParseState {
     export enum Type {
         Text,
@@ -836,7 +833,7 @@ export class Parser implements IterableIterator<Parser.Node> {
     }
 }
 
-export async function* parseStream(stream: ReadableStream, options?: ParserOptions): AsyncIterator<Parser.Node> {
+export async function* parseStream(stream: ReadableStream, options?: ParserOptions): AsyncIterableIterator<Parser.Node> {
     const r = stream.getReader();
     try {
         const decoder = new TextDecoder();

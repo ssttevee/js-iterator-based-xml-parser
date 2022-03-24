@@ -83,12 +83,11 @@ import { Parser, parse, parseStream } from '@ssttevee/xml-parser';
 ### Deno
 
 ```ts
-import { Parser, parse, parseStream } from 'https://raw.githubusercontent.com/ssttevee/xml-parser/trunk/mod.ts';
+import { Parser, parse, parseStream } from 'https://raw.githubusercontent.com/ssttevee/js-iterator-based-xml-parser/trunk/mod.ts';
 ```
 
 OR
 
 ```ts
-// @deno-types="https://unpkg.com/@ssttevee/xml-parser/index.d.js"
-import { Parser, parse, parseStream } from "https://unpkg.com/@ssttevee/xml-parser/index.js";
+import { Parser, parse, parseStream } from "https://unpkg.com/@ssttevee/xml-parser/mod.ts";
 ```
